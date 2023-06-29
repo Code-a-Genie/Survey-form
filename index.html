@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>freeCodeCamp survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp survey form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <fieldset>
+      <form id="survey-form">
+        <label id="name-label"
+          >Name: <input type="text" id="name" required
+        /></label>
+        <label id="email-label"
+          >Email: <input type="email" id="email" required
+        /></label>
+        <label id="number"
+          >Number: <input type="number" id="number" min="5" max="10" required
+        /></label>
+      </form>
+      <label>
+        What option best describes your current role<select>
+          <option>Select current role</option>
+          <option>Fulltime job</option>
+          <option>Fulltime learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select></label>
+    </fieldset>
+    <fieldset>
+      <p>Would you recommend freeCodeCamp to a friend</p>
+      <label><input type="radio" name="select" id="Yes"/> Yes</label>
+      <label><input type="radio" name="select" id="No"/> No</label>
+      <label><input type="radio" name="select" id="Notsure"/> Not sure</label>
+    </fieldset>
+    <fieldset>
+        <p>Would you like to see improved?(check all that apply)</p>
+        <label><input type="checkbox" value="Frontend"/> Front-end projects</label>
+        <label><input type="checkbox" value="Frontend"/> Back-end projects</label>
+        <label><input type="checkbox" value="Frontend"/> Data Visualization</label>
+        <label><input type="checkbox" value="Frontend"/> Challenges</label>
+        <label><input type="checkbox" value="Frontend"/> Open Source Community</label>
+        <label><input type="checkbox" value="Frontend"/> Gitter help rooms</label>
+        <label><input type="checkbox" value="Frontend"/> Videos</label>
+        <label><input type="checkbox" value="Frontend"/> City Meetup</label>
+
+    </fieldset>
+    <fieldset></fieldset>
+  </body>
+</html>
