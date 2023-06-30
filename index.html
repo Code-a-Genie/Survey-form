@@ -12,22 +12,21 @@
     <fieldset>
       <form id="survey-form">
         <label id="name-label"
-          >Name: <input type="text" id="name" required
+          >Name: <input type="text" id="name" placeholder="Enter your name" required
         /></label>
         <label id="email-label"
-          >Email: <input type="email" id="email" required
+          >Email: <input type="email" id="email" placeholder="Enter your email" required
         /></label>
         <label id="number"
-          >Number: <input type="number" id="number" min="5" max="10" required
+          >Number: <input type="number" id="number" min="5" max="10" placeholder="Number"required
         /></label>
-      </form>
+     
       <label>
         What option best describes your current role<select>
           <option>Select current role</option>
           <option>Fulltime job</option>
           <option>Fulltime learner</option>
           <option>Prefer not to say</option>
-          <option>Other</option>
         </select></label>
     </fieldset>
     <fieldset>
@@ -37,17 +36,21 @@
       <label><input type="radio" name="select" id="Notsure"/> Not sure</label>
     </fieldset>
     <fieldset>
-        <p>Would you like to see improved?(check all that apply)</p>
+        <p>Would you like to see improved? (check all that apply)</p>
         <label><input type="checkbox" value="Frontend"/> Front-end projects</label>
-        <label><input type="checkbox" value="Frontend"/> Back-end projects</label>
-        <label><input type="checkbox" value="Frontend"/> Data Visualization</label>
-        <label><input type="checkbox" value="Frontend"/> Challenges</label>
-        <label><input type="checkbox" value="Frontend"/> Open Source Community</label>
-        <label><input type="checkbox" value="Frontend"/> Gitter help rooms</label>
-        <label><input type="checkbox" value="Frontend"/> Videos</label>
-        <label><input type="checkbox" value="Frontend"/> City Meetup</label>
-
+        <label><input type="checkbox" value="Back-end projects"/> Back-end projects</label>
+        <label><input type="checkbox" value="Data-Visualization"/> Data Visualization</label>
+        <label><input type="checkbox" value="Challenges"/> Challenges</label>
+        <label><input type="checkbox" value="Open-Source"/> Open Source Community</label>
+        <label><input type="checkbox" value="Gitter "/> Gitter help rooms</label>
+        <label><input type="checkbox" value="Videos"/> Videos</label>
+        <label><input type="checkbox" value="City"/> City Meetup</label>
+    </fieldset>    
+    <fieldset>
+        <p>Any comments or suggestions?</p>
+        <textarea placeholder="Enter your comment here..."></textarea>
+        <button type="submit">Submit</button>
     </fieldset>
-    <fieldset></fieldset>
+</form>
   </body>
 </html>
