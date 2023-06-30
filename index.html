@@ -8,49 +8,50 @@
   </head>
   <body>
     <h1 id="title">freeCodeCamp survey form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
-    <fieldset>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    <div class="container">
+   
       <form id="survey-form">
-        <label id="name-label"
+        <label  id="name-label"
           >Name: <input type="text" id="name" placeholder="Enter your name" required
         /></label>
-        <label id="email-label"
+        <label id="email-label" 
           >Email: <input type="email" id="email" placeholder="Enter your email" required
         /></label>
-        <label id="number"
+        <label id="number-label" 
           >Number: <input type="number" id="number" min="5" max="10" placeholder="Number"required
         /></label>
      
-      <label>
-        What option best describes your current role<select>
+      <label id="dropdown" >
+        What option best describes your current role<select id="select">
           <option>Select current role</option>
           <option>Fulltime job</option>
           <option>Fulltime learner</option>
           <option>Prefer not to say</option>
         </select></label>
-    </fieldset>
-    <fieldset>
-      <p>Would you recommend freeCodeCamp to a friend</p>
-      <label><input type="radio" name="select" id="Yes"/> Yes</label>
-      <label><input type="radio" name="select" id="No"/> No</label>
-      <label><input type="radio" name="select" id="Notsure"/> Not sure</label>
-    </fieldset>
-    <fieldset>
+        <div class="choose">
+      <p class="recommend">Would you recommend freeCodeCamp to a friend?</p>
+      <label class="radio"><input type="radio" name="select" id="Yes"/> Yes</label>
+      <label class="radio"><input type="radio" name="select" id="No"/> No</label>
+      <label class="radio"><input type="radio" name="select" id="Notsure"/> Not sure</label>
+    </div>
+    <div class="tick">
         <p>Would you like to see improved? (check all that apply)</p>
-        <label><input type="checkbox" value="Frontend"/> Front-end projects</label>
-        <label><input type="checkbox" value="Back-end projects"/> Back-end projects</label>
-        <label><input type="checkbox" value="Data-Visualization"/> Data Visualization</label>
-        <label><input type="checkbox" value="Challenges"/> Challenges</label>
-        <label><input type="checkbox" value="Open-Source"/> Open Source Community</label>
-        <label><input type="checkbox" value="Gitter "/> Gitter help rooms</label>
-        <label><input type="checkbox" value="Videos"/> Videos</label>
-        <label><input type="checkbox" value="City"/> City Meetup</label>
-    </fieldset>    
-    <fieldset>
+        <label class="checkbox"><input type="checkbox" value="Frontend"/> Front-end projects</label>
+        <label class="checkbox"><input type="checkbox" value="Back-end projects"/> Back-end projects</label>
+        <label class="checkbox"><input type="checkbox" value="Data-Visualization"/> Data Visualization</label>
+        <label class="checkbox"><input type="checkbox" value="Challenges"/> Challenges</label>
+        <label class="checkbox"><input type="checkbox" value="Open-Source"/> Open Source Community</label>
+        <label class="checkbox"><input type="checkbox" value="Gitter "/> Gitter help rooms</label>
+        <label class="checkbox"><input type="checkbox" value="Videos"/> Videos</label>
+        <label class="checkbox"><input type="checkbox" value="City"/> City Meetup</label>
+      </div>
+      <div class="end">
         <p>Any comments or suggestions?</p>
         <textarea placeholder="Enter your comment here..."></textarea>
-        <button type="submit">Submit</button>
-    </fieldset>
+        <button id="button" type="submit">Submit</button>
+      </div>
 </form>
+</div>
   </body>
 </html>
